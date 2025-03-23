@@ -12,7 +12,9 @@ const handleButtonClick = () => {
 
 <template>
   <button
-    :class="'flex justify-center items-center  btn btn-' + props.type"
+    :class="
+      'flex justify-center items-center cursor-pointer btn btn-' + props.type
+    "
     @click="handleButtonClick"
   >
     <slot />

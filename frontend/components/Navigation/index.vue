@@ -39,14 +39,14 @@ const handleClick = () => {
   >
     <NuxtLink to="/favourites">
       <HeartIcon
-        class="navigation-hamburger cursor-pointer"
         v-if="isMobile && !isMobileNavigationVisible"
+        class="navigation-hamburger cursor-pointer"
       />
     </NuxtLink>
     <NuxtLink to="/cart">
       <ShoppingBagIcon
-        class="navigation-hamburger cursor-pointer"
         v-if="isMobile && !isMobileNavigationVisible"
+        class="navigation-hamburger cursor-pointer"
       />
     </NuxtLink>
     <Bars3Icon

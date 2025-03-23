@@ -2,6 +2,8 @@
 const props = defineProps({
   showHamburger: Boolean,
 });
+
+const emits = defineEmits(["toggle-hamburger"]);
 </script>
 
 <template>
@@ -11,7 +13,7 @@ const props = defineProps({
       'absolute left-0 top-0 h-screen w-screen bg-slate-200 py-4':
         props.showHamburger,
     }"
-    @click="() => $emit('toggle-hamburger')"
+    @click="() => emits('toggle-hamburger')"
   >
     <Logo mobile class="absolute left-2 top-0" />
     <ul
